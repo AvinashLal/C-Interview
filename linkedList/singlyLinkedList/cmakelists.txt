@@ -1,0 +1,8 @@
+set(singlyLinkedList_files
+	singlyLinkedList.cpp
+	singlyLinkedList.h
+)
+add_library(singlyLinkedList ${singlyLinkedList_files})
+
+add_executable(singlyLinkedList_test "singlyLinkedList_test.cpp")
+target_link_libraries(singlyLinkedList_test ${singlyLinkedList_files})

@@ -1,0 +1,14 @@
+# Set the minimum version of CMake that can be used
+# To find the cmake version run
+# $ cmake --version
+cmake_minimum_required(VERSION 3.5)
+
+# Set the project name
+project (hello_cmake)
+
+add_subdirectory(linkedList)
+add_subdirectory(stack)
+
+
+#add_executable(stack_test "stack/stack_test.cpp")
+#target_link_libraries(stack_test ${stack})

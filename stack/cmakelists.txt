@@ -1,0 +1,8 @@
+set(stack_files
+	stack.cpp
+	stack.h
+)
+add_library(stack ${stack_files})
+
+add_executable(stack_test "stack_test.cpp")
+target_link_libraries(stack_test ${stack})
